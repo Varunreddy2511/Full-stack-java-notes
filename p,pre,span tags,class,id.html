@@ -1,0 +1,64 @@
+<html>
+
+    <head>
+        <link rel="icon" type="image\jpeg" href="image.jpeg">
+        <title>Using of paragraph tags</title>
+        <style>
+            body{
+                background-color: black;
+                color: pink;
+            }
+
+            span{
+                color: rgb(190, 132, 70);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 41px;
+            }
+            p{
+                border: solid violet 2px;
+                padding: 10px;
+                font-size: 20px;
+                color: aqua;
+            }
+
+            .color{
+                background-color: rgb(140, 13, 41);
+            }
+           
+            .text{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .input{
+                padding: 10px;
+                margin-right: 10px;
+            }
+            #otp{
+                font-family: cursive;
+                font-size: 20px;
+            }
+            .sub{
+                padding: 10px;
+                margin-right: 10px
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--one or more than one css can be applied to single element by just giving space and entering the class name-->
+        <p class="color text">to add one <a href="basicloginpage.html" style="color: lightgreen;">tap here</a> else <span>skip</span></p>
+        <span>one more to keep</span><p>ok fine!</p>
+        <pre style="font-size: 30px;">look at this....#123</pre>
+        <input type="number" placeholder="enter otp" class="input" id="otp">
+        <button class="sub" onclick="getotp()" id="otp">Submit</button>
+
+        <script>
+            function getotp(){
+                console.log(document.getElementById("otp").value);
+            }
+
+        </script>
+
+    </body>
+
+</html>
