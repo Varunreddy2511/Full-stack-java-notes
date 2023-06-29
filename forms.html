@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+
+        <link rel="icon" href="logo.png">
+        <title>practice</title>
+
+        <style>
+            body{
+                background-color: beige;
+                
+            }
+            div{
+                border: solid 1.2;
+                background-color: rgb(64, 187, 95);
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 5%;
+                padding-top: 10px;
+                padding-left: 40px;
+            }
+            label{
+                font-family: cursive;
+                font-size: 28px;
+            }
+            input{
+                width: 90%;
+                padding: 7px;
+            }
+            button{
+               margin-top: 8px;
+               margin-bottom: 15px;
+               padding: 15px;
+               font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+               font-size: 20px;
+            }
+            select{
+                margin-left: 5px;
+                padding: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <h1>booking details</h1>
+            <form>
+                <label>Name :</label><br>
+                <input type="text" placeholder="enter your name" onpaste=" return false"><br><br>
+                <label> Email :</label><br>
+                <input type="email" placeholder="enter email" onpaste="return false"><br><br>
+                <label>Number :</label><br>
+                <input type="number" placeholder="Enter monile number" onpaste="return false"><br><br>
+                <label>Type of visit :</label> 
+                <select>
+                <option>Select</option>
+                <option>work</option>
+                <option>trip</option>
+                <option>personal</option>
+                <button>Book</button>
+                </select><br>
+                <label>Aadhar copy:</label><br>
+                <input type="file" multiple><!--multiple key word to choose multiple files without multiple only a single file will be allowed to select-->
+                <textarea placeholder="Any specifications" rows="12" cols="31"></textarea><br>
+                <button>book</button>
+            </form>
+        </div>
+
+    </body>
+
+</html>
